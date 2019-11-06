@@ -1,6 +1,6 @@
 from collections import deque
 
-def ping_pong(wins, players):
+def tabletennis(wins, players):
 	p = deque(players)
 
 	idx = 0
@@ -47,14 +47,9 @@ def ping_pong(wins, players):
 		idx += 1
 
 
-def main():
-	first_line = [int(x) for x in input().split(' ')]
-	second_line = [int(x) for x in input().split(' ')]
 
+first_line = [int(x) for x in input().split(' ')]
+second_line = [int(x) for x in input().split(' ')]
 
-	ping_pong(first_line[1], second_line)
+tabletennis(first_line[1], second_line)
 
-
-main()
-
-# https://codeforces.com/contest/879/submission/64100464
